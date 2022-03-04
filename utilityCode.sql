@@ -1,1 +1,1 @@
-DROP TABLE orders
+--Some utility shenanigans that I'd use if I fucked up somewhere

@@ -37,6 +37,23 @@ VALUES (1, 16), (1, 32), (1, 24), (2, 24), (2, 32), (3, 7), (3, 16), (3, 38), (3
 (7, 26), (7, 46), (7, 38), (7, 32), (7, 24), (8, 8), (8, 22), (8, 32), (8, 24),
 (9, 18), (9, 26), (9, 44), (9, 32), (9, 24), (10, 18), (10, 44), (10, 38), (10, 22), (10, 42), (10, 32), (10, 24)
 
+--Customers
+
 INSERT INTO customers (firstName, lastName, phone)
 VALUES ('Joe', 'Mama', 69420), ('Mama', 'Joe', 42069), ('Mama', 'Akutsu', 6969),
-('Satou', 'Kazuma', 235825832), ('Yun', 'Yun', 6446264642)
+('Satou', 'Kazuma', 235825832), ('Yun', 'Yun', 6446264642), ('Kaguya', 'Shimomiya', 643426),
+('Miyuki', 'Shirogane', 5321532), ('Chika', 'Fujiwara', 754321),
+('Wakana', 'Gojo', 643262), ('Marin', 'Kitagawa', 643256)
+
+INSERT INTO orders (idOrder, idCustomer)
+VALUES (1, 1), (1, 2), (2, 3), (3, 4), (3, 5), (4, 6), (4, 7), (4, 8),
+(5, 9), (5, 10)
+
+INSERT INTO pizzaOrders (idPizza, idOrder)
+VALUES (1, 1), (2, 1), (5, 2), (2, 3), (6, 3), (10, 4), (9, 4), (7, 4),
+(1, 5), (5, 5)
+
+--Staff & restaraunt shit
+
+INSERT INTO staffs (firstName, lastName, title, phone, email)
+VALUES ()
