@@ -24,8 +24,8 @@ VALUES ('Pepperoni', 10), ('Margarita', 7), ('BBQ king', 12),
 
 INSERT INTO condiments (name, price)
 VALUES ('bread sticks', 2), ('delux bread sticks', 4), ('chocolate sticks', 3),
-('meat & cheese goodies', 4), ('spicy bread sticks', 3), ('buffalo hot wings'),
-('delux bbq wings')
+('meat & cheese goodies', 4), ('spicy bread sticks', 3), ('buffalo hot wings', 4),
+('delux bbq wings', 5)
 
 INSERT INTO ingredients (name)
 VALUES ('havarti pepper cheese'), ('extra havarti pepper cheese')
@@ -53,7 +53,36 @@ INSERT INTO pizzaOrders (idPizza, idOrder)
 VALUES (1, 1), (2, 1), (5, 2), (2, 3), (6, 3), (10, 4), (9, 4), (7, 4),
 (1, 5), (5, 5)
 
+INSERT INTO condimentOrders (idCondiment, idOrder)
+VALUES (1, 1), (2, 1), (2, 2), (3, 3), (3, 4), (4, 4), (5, 5)
+
 --Staff & restaraunt shit
 
 INSERT INTO staffs (firstName, lastName, title, phone, email)
-VALUES ()
+VALUES ('Joseph', 'Joestar', 'manager', 654326, 'JoJo@gmail.com'),
+('Jonathan', 'Joestar', 'pizza maker', 565432, 'JoeJoe@gmail.com'),
+('Jotaro', 'Kujo', 'pizza maker', 5432165, 'JoKo@gmail.com'),
+('Josuke', 'Higashikata', 'driver', 5642389, 'JoHo@gmail.com'),
+('Giorno', 'Giovanna', 'manager' ,532653412, 'Giorgo@gmail.com'),
+('Jolyne', 'Cujoh', 'pizza maker', 5342166534, 'JoJoCujo@gmail.com'),
+('Johnny', 'Joestar', 'pizza maker', 548329706, 'JoJostar@gmail.com'),
+('George', 'Joestar II', 'driver', 5843291065, 'GoJo@gmail.com')
+
+INSERT INTO restaraunts (idMenu, location)
+VALUES (1, '64.10891331481393, -21.81760325444366'),
+(2, '64.07643077228526, -21.94134240758497')
+
+INSERT INTO staffRestaraunts (idStaff, idRestaraunt)
+VALUES (1, 1), (2, 1), (3, 1), (4, 1), (5, 2), (6, 2), (7, 2), (8, 2)
+
+INSERT INTO menus (idMenu, idPizza)
+VALUES (1, 1), (1, 2), (1, 3), (1, 5), (1, 6), (1, 7), (1, 8),
+(2, 1), (2, 2), (2, 3), (2, 4), (2, 5), (2,6 ), (2, 7), (2, 8), (2, 9), (2, 10)
+
+INSERT INTO reviews (review, reviewText)
+VALUES (1, 'Pretty good'), (0, 'Absolute shit'), (1, 'Good pizza'),
+(1, 'My dad works there'), (1, 'Delicious pizza'), (1, 'The pizza is good as fuck'),
+(0, "I'd rather eat dog poop")
+
+INSERT INTO restarauntReviews (idRestaraunt, idReview)
+VALUES (1, 1), (1, 2), (2, 3), (1, 4), (2, 5), (2, 6), (2, 7)
