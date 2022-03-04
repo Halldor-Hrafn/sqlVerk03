@@ -24,9 +24,21 @@ CREATE TABLE condiments (
 );
 
 CREATE TABLE orders (
-    idCondiment INTEGER,
+    idOrder INTEGER,
+    idCustomer INTEGER,
+    PRIMARY KEY (idOrder, idCustomer)
+);
+
+CREATE TABLE pizzaOrders (
     idPizza INTEGER,
-    idCustomer INTEGER
+    idOrder INTEGER,
+    PRIMARY KEY (idPizza, idOrder)
+);
+
+CREATE TABLE condimentOrders (
+    idCondiment INTEGER,
+    idOrder INTEGER,
+    PRIMARY KEY (idCondiment, idOrder)
 );
 
 CREATE TABLE pizzaRestraunts (
@@ -74,4 +86,11 @@ CREATE TABLE restarauntReviews (
     idRestaraunt INTEGER,
     idReview INTEGER,
     PRIMARY KEY (idRestaraunt, idReview)
+);
+
+CREATE TABLE customers (
+    idCustomer INTEGER PRIMARY KEY,
+    firstName TEXT,
+    lastName TEXT,
+    phone INTEGER
 );

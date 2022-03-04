@@ -26,3 +26,17 @@ INSERT INTO condiments (name, price)
 VALUES ('bread sticks', 2), ('delux bread sticks', 4), ('chocolate sticks', 3),
 ('meat & cheese goodies', 4), ('spicy bread sticks', 3), ('buffalo hot wings'),
 ('delux bbq wings')
+
+INSERT INTO ingredients (name)
+VALUES ('havarti pepper cheese'), ('extra havarti pepper cheese')
+
+INSERT INTO pizzaIngredients (idPizza, idIngredient)
+VALUES (1, 16), (1, 32), (1, 24), (2, 24), (2, 32), (3, 7), (3, 16), (3, 38), (3, 20), (3, 28), (3, 36), (3, 24),
+(4, 26), (4, 40), (4, 16), (4, 1), (4, 42), (4, 32), (4, 24), (5, 18), (5, 22), (5, 20),
+(5, 44), (5, 36), (5, 16), (5, 24), (6, 18), (6, 16), (6, 38), (6, 28), (6, 42), (6,32), (6, 24),
+(7, 26), (7, 46), (7, 38), (7, 32), (7, 24), (8, 8), (8, 22), (8, 32), (8, 24),
+(9, 18), (9, 26), (9, 44), (9, 32), (9, 24), (10, 18), (10, 44), (10, 38), (10, 22), (10, 42), (10, 32), (10, 24)
+
+INSERT INTO customers (firstName, lastName, phone)
+VALUES ('Joe', 'Mama', 69420), ('Mama', 'Joe', 42069), ('Mama', 'Akutsu', 6969),
+('Satou', 'Kazuma', 235825832), ('Yun', 'Yun', 6446264642)
